@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <servlet>
+  	<servlet-name>DepartmentServlet</servlet-name>
+  	<servlet-class>com.sky.servlets.DepartmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DepartmentServlet</servlet-name>
+  	<url-pattern>*.department</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>TitleServlet</servlet-name>
+  	<servlet-class>com.sky.servlets.TitleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TitleServlet</servlet-name>
+  	<url-pattern>*.title</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>StaffServlet</servlet-name>
+  	<servlet-class>com.sky.servlets.StaffServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StaffServlet</servlet-name>
+  	<url-pattern>*.staff</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<servlet-class>com.sky.servlets.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<url-pattern>*.admin</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
